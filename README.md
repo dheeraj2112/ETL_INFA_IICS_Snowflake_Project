@@ -1,4 +1,4 @@
-#Sample_Datawarehouse_Project
+**Sample Datawarehouse Project using IICS with Snowflake**
 
 1) Project Overview
 
