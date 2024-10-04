@@ -12,7 +12,9 @@ Target: Target is Snowflake having both EDW_STG and EDW Layers. The DDLs can be 
 
 3) ETL/ELT Data Flows
 
+
 Source (Oracle) to Stg(Snowflake) : Using SCD Type-1
+
 Stg (Snowflake) to EDW(Snowflake) : Using SCD Type-2
 
 Optinal: EDW_STG to EDW data flow can be implemented using Snowflake features itself using Streams, Tasks, Stored Proc etc. The code can be found here.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW%20STG%20to%20EDW%20Pipelines%20using%20Snowflake%20based%20on%20ORA%20HR%20DB.sql
