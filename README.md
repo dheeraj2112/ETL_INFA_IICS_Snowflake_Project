@@ -37,4 +37,5 @@ EDW_EXTR: Enterprise Data Warehouse\EDW_EXTR
 
 Views or Dynamic tables can be leveraged accordingly. This can be done from ETL job or Snowflake db objects as per need. https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW_EXTR%20Views%20and%20Dynamic%20Tables%20for%20Reporting.sql
 
-<END OF DOCUMENT>
+
+<ENDOFDOCUMENT>
