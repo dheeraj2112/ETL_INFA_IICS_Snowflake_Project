@@ -31,11 +31,12 @@ EDW_EXTR: Enterprise Data Warehouse\EDW_EXTR
 
 Note: ODBC connection has been used from IICS to Snowflake  but if you have the JDBC connector feel free to re-point the Snowflake database and other connections accordingly.
 
-5) Analysis and Reporting
+5) Analysis and Reporting (ETL Code)
    
-EDW_EXTR: Enterprise Data Warehouse\EDW_EXTR
+Views or Dynamic tables can be leveraged accordingly. This can be done from ETL job or Snowflake db objects as per need.
 
-Views or Dynamic tables can be leveraged accordingly. This can be done from ETL job or Snowflake db objects as per need. https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW_EXTR%20Views%20and%20Dynamic%20Tables%20for%20Reporting.sql
+https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW_EXTR%20Views%20and%20Dynamic%20Tables%20for%20Reporting.sql
 
+6) Addtionally, a Snowflake quickstart on **Harness the Power of Snowflake with Informatica Intelligent Data Management Cloud** can be followed whoever wants to do some specific hands on Snowflake with Informatica Cloud.
 
 <ENDOFDOCUMENT>
