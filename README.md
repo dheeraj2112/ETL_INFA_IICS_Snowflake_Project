@@ -10,12 +10,26 @@ Source: Source is Oracle on-prem HR schema. The script can be used to generate t
 
 Target: Target is Snowflake having both EDW_STG and EDW Layers. The DDLs can be found in the repo. https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/IICS_ORA_SNFLK_EDW_DDL.sql
 
-3) ETL/ELT Data Flows
-
+3) ETL/ELT Data Flows using Mappings and Mapping Tasks
 
 Source (Oracle) to Stg(Snowflake) : Using SCD Type-1
 
 Stg (Snowflake) to EDW(Snowflake) : Using SCD Type-2
+
+orchestration and scheduling : Using Taskflows and as per needed schdule.
+
+**SRC to STG**
+
+![image](https://github.com/user-attachments/assets/e63a7caf-5ff8-490f-88c6-dbfacf91a887)
+
+**STG to EDW**
+
+![image](https://github.com/user-attachments/assets/ccdf50f0-2b15-49ad-95f7-a77203714916)
+
+**ALL IN ONE TASKFLOW (Using Sub-Task flow to combine SRC to STG and STG to EDW Taskflows into one single WF)**
+
+![image](https://github.com/user-attachments/assets/6362056c-f85f-48a6-8eb9-735fc1ffa098)
+
 
 Optinal: EDW_STG to EDW data flow can be implemented using Snowflake features itself using Streams, Tasks, Stored Proc etc. The code can be found here.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW%20STG%20to%20EDW%20Pipelines%20using%20Snowflake%20based%20on%20ORA%20HR%20DB.sql
 
@@ -39,7 +53,7 @@ https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a
 
 6) Addtionally, a Snowflake quickstart on **Harness the Power of Snowflake with Informatica Intelligent Data Management Cloud** can be followed whoever wants to do some specific hands on Snowflake with Informatica Cloud.
 
-7) ![WhatsApp Image 2024-10-07 at 20 53 35_723443f4](https://github.com/user-attachments/assets/f7665104-a4f0-4e5b-ae8b-0033d30fc41a)
+https://quickstarts.snowflake.com/guide/harness_the_power_of_snowflake_with_informatica_idmc/index.html?index=..%2F..index#0
 
 
 <ENDOFDOCUMENT>
