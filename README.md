@@ -39,4 +39,7 @@ https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a
 
 6) Addtionally, a Snowflake quickstart on **Harness the Power of Snowflake with Informatica Intelligent Data Management Cloud** can be followed whoever wants to do some specific hands on Snowflake with Informatica Cloud.
 
+7) ![WhatsApp Image 2024-10-07 at 20 53 35_723443f4](https://github.com/user-attachments/assets/f7665104-a4f0-4e5b-ae8b-0033d30fc41a)
+
+
 <ENDOFDOCUMENT>
