@@ -10,7 +10,7 @@ i. Valid IICS and Snowflake Accounts
 
 ii. Secure Agent for IICS configured and the agent is up/running
 
-iii. On-Prem Oracle db with HR schema objects. The objects with data can be created from #2 mentioned below, if not available already.
+iii. On-Prem Oracle db (configured as an ODBC connection in IICS) with HR schema objects. The objects with data can be created from #2 mentioned below, if not available already.
 
 2) Source and Target 
 
@@ -71,4 +71,5 @@ ii. Build the EDW_STG to EDW data pipelines using Snowflake features as mentione
 
 iii. Addtinal integration with AWS/Azure/GCP in place of Informatica to implemnt this project. Juust SRC to EDW_STG data pipelines logic to be implemneted as EDW_STG to EDW data pipelines are already in place within Snowflake as mentioned in point #ii above.
 
-**<ENDOFDOCUMENT>**
+
+**ENDOFDOCUMENT**
