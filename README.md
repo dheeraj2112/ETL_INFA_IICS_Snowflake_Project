@@ -8,7 +8,7 @@ The goal of a data warehouse project is to consolidate data from various sources
 
 The end-to-end data pipelines flow represents the complete data journey, from its source, whether on-premise, in the cloud or otherwise, to its final display in Enterprose Data Warehouse to dashboards and reports thereafter. It starts with the collection of data from various sources, such as transactional databases or CRM systems, through to the presentation of intuitive reports or visualisations. This process includes transforming and cleansing the data using ETL (Extract, Transform, Load) techniques in a centralised Data Warehouse project.
 
-The goal of this project is to design and implement robust data integration pipelines that enables analysis and reporting for the oragnization. By leveraging IICS for ETL (Extract, Transform, Load) processes and Snowflake as the cloud data warehouse, the project aimed to improve decision-making through timely access to consolidated data.
+The goal of this project is to design and implement robust data integration pipelines that enables Analytics and Reporting for the oragnization. By leveraging IICS for ETL (Extract, Transform, Load) processes and Snowflake as the cloud data warehouse, the project aimed to improve decision-making through timely access to consolidated data.
 
 1.1) Pre-requisite: 
 
