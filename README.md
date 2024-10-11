@@ -20,11 +20,15 @@ Target: Target is Snowflake having both EDW_STG and EDW Layers. The DDLs can be 
 
 3) ETL/ELT Data Flows using Mappings and Mapping Tasks
 
-Source (Oracle) to Stg(Snowflake) : Using SCD Type-1 (Optinally can be SCD Type-4 with addtional History tables)
+i. Source (Oracle) to EDW_STG (Snowflake) : Using SCD Type-1 (Optinally can be SCD Type-4 with addtional History tables)
 
-Stg (Snowflake) to EDW(Snowflake) : Using SCD Type-2 (Using MERGE statements in Snowflake)
+![image](https://github.com/user-attachments/assets/7b6096af-2192-4b16-b52e-1bb9bfcc2ecd)
 
-Orchestration and scheduling : Using IICS/Taskflows or Snowflake Tasks as per needed schedule.
+ii. EDW_STG (Snowflake) to EDW(Snowflake) : Using SCD Type-2 (Using MERGE statements in Snowflake)
+
+![image](https://github.com/user-attachments/assets/8ba17954-e11e-44a2-8572-07d788e127c3)
+
+iii. Orchestration and scheduling : Using IICS/Taskflows or Snowflake Tasks as per needed schedule.
 
 **SRC to STG**
 
