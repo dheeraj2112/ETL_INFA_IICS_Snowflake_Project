@@ -10,7 +10,7 @@ you can run "Drop HR Sample Schema" - https://livesql.oracle.com/apex/livesql/fi
 Please note that this schema was initially created in 2000 and last updated March 19, 2015 so the constructs are not 
 necessarily what we would recommend today.
 */
---0 prep steps needed if using express edition and HR schema is not available
+1 prep steps needed if using express edition and HR schema is not available
 
 CONNECT TO ORACLE USING SYS/SYSTEM WITH SYSDBA ROLE.
 CREATE USER IDENTIFIED BY HR;
@@ -20,49 +20,8 @@ GRANT DBA TO HR;
 
 --CONNECT TO HR USER AS STEP UP ABOVE and follow the below steps.
 
---1 Copyrights etc
-begin  
-   dbms_output.put_line('Copyright (c) 2018, Oracle and/or its affiliates.  All rights reserved.  '); 
-   dbms_output.put_line('Permission is hereby granted, free of charge, to any person obtaining '); 
-   dbms_output.put_line('a copy of this software and associated documentation files (the '); 
-   dbms_output.put_line('"Software"), to deal in the Software without restriction, including '); 
-   dbms_output.put_line('without limitation the rights to use, copy, modify, merge, publish, '); 
-   dbms_output.put_line('distribute, sublicense, and/or sell copies of the Software, and to '); 
-   dbms_output.put_line('permit persons to whom the Software is furnished to do so, subject to '); 
-   dbms_output.put_line('the following conditions: '); 
-   dbms_output.put_line(' '); 
-   dbms_output.put_line('The above copyright notice and this permission notice shall be '); 
-   dbms_output.put_line('included in all copies or substantial portions of the Software. '); 
-   dbms_output.put_line(' '); 
-   dbms_output.put_line('THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, '); 
-   dbms_output.put_line('EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF '); 
-   dbms_output.put_line('MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND '); 
-   dbms_output.put_line('NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE '); 
-   dbms_output.put_line('LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION '); 
-   dbms_output.put_line('OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION '); 
-   dbms_output.put_line('WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. '); 
-end; 
-/*
-Copyright (c) 2018, Oracle and/or its affiliates.  All rights reserved.  
-Permission is hereby granted, free of charge, to any person obtaining 
-a copy of this software and associated documentation files (the 
-"Software"), to deal in the Software without restriction, including 
-without limitation the rights to use, copy, modify, merge, publish, 
-distribute, sublicense, and/or sell copies of the Software, and to 
-permit persons to whom the Software is furnished to do so, subject to 
-the following conditions: 
-The above copyright notice and this permission notice shall be 
-included in all copies or substantial portions of the Software. 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION 
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 
-*/
-/*
+
 2
 
 HR.LOCATIONS table has a foreign key to this table.
