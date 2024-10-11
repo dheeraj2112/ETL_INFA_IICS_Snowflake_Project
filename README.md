@@ -1,11 +1,13 @@
-**Sample Datawarehouse Project using IICS with Snowflake**
+**Project Summary: Data Integration and Analytics with IICS and Snowflake**
+**Project Title: Integrated Data Pipelines for Analytics and Reporting**
 
-1) Project Overview
+1) Project Overview and objective
 
 The goal of a data warehouse project is to consolidate data from various sources into a centralized repository for analysis and reporting. This enhances decision-making capabilities by providing a holistic view of the organization's data.
 
 The end-to-end data pipelines flow represents the complete data journey, from its source, whether on-premise, in the cloud or otherwise, to its final display in Enterprose Data Warehouse to dashboards and reports thereafter. It starts with the collection of data from various sources, such as transactional databases or CRM systems, through to the presentation of intuitive reports or visualisations. This process includes transforming and cleansing the data using ETL (Extract, Transform, Load) techniques in a centralised Data Warehouse project.
 
+The goal of this project is to design and implement robust data integration pipelines that enables analysis and reporting for the oragnization. By leveraging IICS for ETL (Extract, Transform, Load) processes and Snowflake as the cloud data warehouse, the project aimed to improve decision-making through timely access to consolidated data.
 
 1.1) Pre-requisite: 
 
