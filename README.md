@@ -4,6 +4,14 @@
 
 The goal of a data warehouse project is to consolidate data from various sources into a centralized repository for analysis and reporting. This enhances decision-making capabilities by providing a holistic view of the organization's data.
 
+1.1) Pre-requisite: 
+
+i. Valid IICS and Snowflake Accounts 
+
+ii. Secure Agent for IICS configured and the agent is up/running
+
+iii. On-Prem Oracle db with HR schema objects. The objects with data can be created from #2 mentioned below, if not available already.
+
 2) Source and Target 
 
 Source: Source is Oracle on-prem HR schema. The script can be used to generate that data set, if not available handy. https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/HR%20Objects%20and%20Data%20For%20Live%20SQL.sql
@@ -12,11 +20,11 @@ Target: Target is Snowflake having both EDW_STG and EDW Layers. The DDLs can be 
 
 3) ETL/ELT Data Flows using Mappings and Mapping Tasks
 
-Source (Oracle) to Stg(Snowflake) : Using SCD Type-1
+Source (Oracle) to Stg(Snowflake) : Using SCD Type-1 (Optinally can be SCD Type-4 with addtional History tables)
 
-Stg (Snowflake) to EDW(Snowflake) : Using SCD Type-2
+Stg (Snowflake) to EDW(Snowflake) : Using SCD Type-2 (Using MERGE statements in Snowflake)
 
-orchestration and scheduling : Using Taskflows and as per needed schdule.
+Orchestration and scheduling : Using IICS/Taskflows or Snowflake Tasks as per needed schedule.
 
 **SRC to STG**
 
@@ -31,7 +39,7 @@ orchestration and scheduling : Using Taskflows and as per needed schdule.
 ![image](https://github.com/user-attachments/assets/6362056c-f85f-48a6-8eb9-735fc1ffa098)
 
 
-Optinal: EDW_STG to EDW data flow can be implemented using Snowflake features itself using Streams, Tasks, Stored Proc etc. The code can be found here.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW%20STG%20to%20EDW%20Pipelines%20using%20Snowflake%20based%20on%20ORA%20HR%20DB.sql
+**Optinal:** EDW_STG to EDW data pipelines can be implemented using Snowflake features itself using Streams, Tasks, Stored Proc etc. The code can be found here.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW%20STG%20to%20EDW%20Pipelines%20using%20Snowflake%20based%20on%20ORA%20HR%20DB.sql
 
 4) ETL Code using IICS
 
@@ -47,7 +55,7 @@ Note: ODBC connection has been used from IICS to Snowflake  but if you have the 
 
 5) Analysis and Reporting (ETL Code)
    
-Views or Dynamic tables can be leveraged accordingly. This can be done from ETL job or Snowflake db objects as per need.
+Views or Dynamic tables can be leveraged accordingly for the analysia and reporting needs. This can be done from ETL job or Snowflake db objects as per need.
 
 https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW_EXTR%20Views%20and%20Dynamic%20Tables%20for%20Reporting.sql
 
@@ -57,10 +65,10 @@ https://quickstarts.snowflake.com/guide/harness_the_power_of_snowflake_with_info
 
 7) Next Steps -->
 
-i. Incremental/CDC logic handling ( either having some audit framework or IICS specific CDC handling features with SETVARIABLE option / in-built $LastRunDate or $LastRunTime variables)
+i. Incremental/CDC logic handling ( either having some audit framework or IICS specific CDC handling features with { SETVARIABLE option / in-built $LastRunDate or $LastRunTime variables})
 
 ii. Build the EDW_STG to EDW data pipelines using Snowflake features as mentioned in the optional section of #3.
 
-iii. Addtinal integration with AWS/Azure/GCP in place of Informatica to implemnt this project. just SRC to EDW_STG logic to be implemneted as EDW_STG to EDW data pipelines are already in place as mentioned in #ii above.
+iii. Addtinal integration with AWS/Azure/GCP in place of Informatica to implemnt this project. Juust SRC to EDW_STG data pipelines logic to be implemneted as EDW_STG to EDW data pipelines are already in place within Snowflake as mentioned in point #ii above.
 
-<ENDOFDOCUMENT>
+**<ENDOFDOCUMENT>**
