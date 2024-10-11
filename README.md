@@ -1,4 +1,5 @@
 **Project Summary: Data Integration and Analytics with IICS and Snowflake**
+
 **Project Title: Integrated Data Pipelines for Analytics and Reporting**
 
 1) Project Overview and objective
