@@ -35,7 +35,7 @@ Optinal: EDW_STG to EDW data flow can be implemented using Snowflake features it
 
 4) ETL Code using IICS
 
-**Pre-requisite: Valid IICS account and an agent with DIS service should be up and running. Once this is already in place then re-configure/re-point the connections (DB, Flat File and APIs etc) to your enviroment accordingly.**
+**Pre-requisite: Valid IICS account and an agent with DIS service should be up and running. Once this is already in place then re-configure/re-point the connections (DB, Flat File and APIs etc) to your enviroment accordingly. Once these are setup properly then import the ETL code from repo to IICS**
 
 The ETL Code can be found in the repo.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/Enterprise%20Data%20Warehouse%20Export%204_Octtober_2024.zip
 
@@ -55,5 +55,10 @@ https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a
 
 https://quickstarts.snowflake.com/guide/harness_the_power_of_snowflake_with_informatica_idmc/index.html?index=..%2F..index#0
 
+7) Next Steps -->
+
+i. Incremental/CDC logic handling ( either having some audit framework or IICS specific CDC handling features with SETVARIABLE option / in-built $LastRunDate or $LastRunTime variables)
+ii. Build the EDW_STG to EDW data pipelines using Snowflake features as mentioned in the optional section of #3.
+iii. Addtinal integration with AWS/Azure/GCP in place of Informatica to implemnt this project. just SRC to EDW_STG logic to be implemneted as EDW_STG to EDW data pipelines are already in place as mentioned in #ii above.
 
 <ENDOFDOCUMENT>
