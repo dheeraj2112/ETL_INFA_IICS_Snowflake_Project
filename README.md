@@ -15,6 +15,10 @@ ii. Secure Agent for IICS configured and the agent is up/running
 
 iii. On-Prem Oracle db (configured as an ODBC connection in IICS) with HR schema objects. The objects with data can be created from #2 mentioned below, if not available already.
 
+1.2) Reference Architecture Diagram
+
+![image](https://github.com/user-attachments/assets/5e96470f-1078-4b3e-8a76-371978be6cb1)
+
 2) Source and Target 
 
 Source: Source is Oracle on-prem HR schema. The script can be used to generate that data set, if not available handy. https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/HR%20Objects%20and%20Data%20For%20Live%20SQL.sql
