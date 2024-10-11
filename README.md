@@ -54,7 +54,7 @@ iii. Orchestration and scheduling : Using IICS/Taskflows or Snowflake Tasks as p
 
 4) ETL Code using IICS
 
-**Pre-requisite: Valid IICS account and an agent with DIS service should be up and running. Once this is already in place then re-configure/re-point the connections (DB, Flat File and APIs etc) to your enviroment accordingly. Once these are setup properly then import the ETL code from repo to IICS Org**
+**Pre-requisite: Valid IICS account and an agent with DIS service should be up and running. Once this is already in place then re-configure/re-point the connections (DB, Flat File and APIs etc) to your enviroment accordingly. Once these are setup properly then import the ETL code from repo to IICS Org.**
 
 The ETL Code can be found in the repo.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/Enterprise%20Data%20Warehouse%20Export%204_Octtober_2024.zip
 
