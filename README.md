@@ -77,7 +77,7 @@ Note: ODBC connection has been used from IICS to Snowflake  but if you have the 
 
 5) Analysis and Reporting (ETL Code)
    
-Views or Dynamic tables can be leveraged accordingly for the analysia and reporting needs. This can be done from ETL job or Snowflake db objects as per need.
+Views or Dynamic tables can be leveraged accordingly for the analytics and reporting or visualization needs. This can be done from IICS ETL job or Snowflake specific features as per need.
 
 https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/EDW_EXTR%20Views%20and%20Dynamic%20Tables%20for%20Reporting.sql
 
