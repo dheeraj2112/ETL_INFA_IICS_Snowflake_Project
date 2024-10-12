@@ -59,10 +59,16 @@ iii. Orchestration and scheduling : Using IICS/Taskflows or Snowflake Tasks as p
 
 **Pre-requisite: Valid IICS account and an agent with DIS service should be up and running. Once this is already in place then re-configure/re-point the connections (DB, Flat File and APIs etc) to your enviroment accordingly. Once these are setup properly then import the ETL code from repo to IICS Org.**
 
-The ETL Code can be found in the repo.  https://github.com/dheeraj2112/INFA_IICS_Snowflake_Project/blob/a69bf3a16396e40a7a6fa0aedafebf485ddfecd8/Enterprise%20Data%20Warehouse%20Export%204_Octtober_2024.zip
+The ETL Code can be found in the repo which can be imported in IICS.Once the import is sucessful then the corresponding project and folders will be available as mentioned below.  
 
-SRC to EDW STG: Enterprise Data Warehouse\EDW_STG
-EDW STG to EDW: Enterprise Data Warehouse\EDW
+https://github.com/dheeraj2112/ETL_INFA_IICS_Snowflake_Project/blob/master/Enterprise%20Data%20Warehouse%20Export%204_Octtober_2024.zip
+
+**Project and Folders for STG and EDW(as well as Extarcts generation) Jobs:**
+
+SRC to EDW_STG: Enterprise Data Warehouse\EDW_STG
+
+EDW_STG to EDW: Enterprise Data Warehouse\EDW
+
 EDW_EXTR: Enterprise Data Warehouse\EDW_EXTR
 
 Note: ODBC connection has been used from IICS to Snowflake  but if you have the JDBC connector feel free to re-point the Snowflake database and other connections accordingly.
