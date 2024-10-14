@@ -93,7 +93,7 @@ ii.Incremental/CDC logic handling ( either having some audit framework or IICS s
 
 iii. Build the EDW_STG to EDW data pipelines using Snowflake features as mentioned in the optional section of #3.
 
-iv. Addtinal integration with AWS/Azure/GCP in place of Informatica to implemnt this project. Juust SRC to EDW_STG data pipelines logic to be implemneted as EDW_STG to EDW data pipelines are already in place within Snowflake as mentioned in point #ii above.
+iv. Additional integration with AWS/Azure/GCP in place of Informatica to implement this project. Just SRC to EDW_STG data pipelines logic to be implemented as EDW_STG to EDW data pipelines are already in place within Snowflake as mentioned in point #ii above.
 
 
 **ENDOFDOCUMENT**
